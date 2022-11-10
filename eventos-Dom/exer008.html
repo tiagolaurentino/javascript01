@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        div#area {
+            font: normal 20px arial;
+            background-color: rgb(6, 177, 6);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interajaaa...
+    </div>
+    <script>
+        var a = window.document.getElementById('area') //objeto global lado de fora das function
+        
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        // eventos criado dentro de javascript
+
+        function clicar(){
+              a.innerText = 'clicou'
+              a.style.backgroundColor = 'red'
+        }  //quando tiver duas funções ou mais o var fica fora da function
+
+        function entrar(){
+            a.innerText = 'entrou'
+        }
+
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.backgroundColor = 'blue'
+        }
+    </script>
+</body>
+</html>
