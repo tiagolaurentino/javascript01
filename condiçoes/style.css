@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(18, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    font: normal 18px arial;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    text-align: center;
+}
+#res {
+    border: 1px solid black;
+    width: 450px;
+    height: 30px;
+    margin: 20px;
+    padding: 8px;
+}
