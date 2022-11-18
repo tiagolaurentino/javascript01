@@ -8,6 +8,29 @@ body{
 header {
     color: white;
     text-align: center;
+    
+}
+
+
+div#saida{
+    font: normal 15px arial;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+div#entrada {
+    background-color: rgb(248, 245, 250);
+}
+div.foto {
+    margin: auto;
+    width: 180px;
+}
+
+img {
+    width: 180px;
+    height: 180px;
 }
 
 section {

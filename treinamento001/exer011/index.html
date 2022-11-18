@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div id="entrada">
+            <p>
+                Ano de Nascimento
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                sexo:
+                <input type="radio" name="radsex" id="masc" checked> 
+                <label for="masc">masculino</label>
+                <input type="radio" name="radsex" id="femi">
+                <label for="femi">feminino</label>
+
+                <!--name os 2 tem que ser igual tanto no masculino ou no feminino-->
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        
+        <div id="saida">
+            <div class="foto">
+                <img src="../exer011/menino.jpg" alt="" id="imagem">
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo!!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
