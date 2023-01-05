@@ -1,0 +1,53 @@
+// CallBack function
+
+//podi colocar a => no nome q funcionarar.
+
+function sayMyName(name) {
+    console.log('tiago')
+
+    name()
+
+    console.log('João')
+}
+
+sayMyName(
+    () => {
+        console.log('Maria')
+    }
+) 
+//Função Comida
+
+function Comida() {
+    
+    console.log('feijoada')
+
+   function almoço() {
+        console.log('Dobradinha')
+    }
+    almoço()
+
+    console.log('Costela')
+}
+
+Comida()
+
+
+//Função Garage
+function Garage(carro) {
+    console.log('Palio')
+    console.log('Punto')
+
+    carro()
+
+    console.log()
+    console.log('Uno')
+    console.log()
+    console.log('ola boa noite')
+}
+
+Garage(
+    () => {
+        console.log('Corsa')
+        console.log('Golf')  
+    } 
+)

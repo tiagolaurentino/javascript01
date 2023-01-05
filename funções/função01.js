@@ -9,4 +9,4 @@ function parimpar(n){
 /*let res = parimpar(11) 
     console.log(res) */
 
-    console.log(parimpar(209))  //função par ou impar
+    console.log(parimpar(21))  //função par ou impar
