@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        .red {
+            color: red
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body >
+    <header class="novo">
+        <h1 id="blog">Meu Blog,</h1>
+    </header>
+
+    <p class="one">ola</p>
+
+    <p class="one">tudo bem</p>
+
+    <input type="text" name="" id="" value="valores novos">
+    
+    <script>
+        const elemento = document.getElementById('blog')
+        console.log(elemento)
+
+        const element = document.getElementsByClassName('one')
+        console.log(element)
+        
+        const element01 = document.getElementsByTagName('body')
+        console.log(element01)
+
+        const element02 = document.querySelector('meta')
+        console.log(element02)
+
+        const element03 = document.querySelectorAll('meta')
+        console.log(element03)
+        //textContent
+        elemento.textContent += ' ola Devis'
+        console.log(elemento.textContent)
+
+        const elemento04 = document.querySelector('input')
+
+        console.log(elemento04.value)//atribuir valores
+        elemento04.value = 'valor que eu quiser'
+
+        // 1 adicionar  id na tag header
+        const header = document.querySelector('header')
+        header.setAttribute('id', 'header')
+
+        const headerID = document.querySelector('#header')
+
+        console.log(headerID)//peguei o atributo
+
+        //header.removeAttribute('')//removi o atributo
+       // header.removeAttribute('id')
+
+       header.setAttribute('class','bg header')//adicionar
+
+       //2 Alterando o stilos
+       const elemento05 = document.querySelector('body')
+        //alterando a cor do body
+       //elemento05.style.backgroundColor = '#f9f302'
+       console.log(elemento05.style.backgroundColor)
+        
+       //Alterando estilo com classList
+       const elemento06 = document.querySelector('body')
+
+        elemento06.classList.add('red','green')//adicionar
+
+        console.log(elemento06.classList)
+        elemento06.classList.remove('red')//remover
+        elemento06.classList.toggle('red')//tipo interruptor on/off
+
+        //criando e adicionando elementos
+
+       //createElement
+       const div = document.createElement('div');
+       div.innerHTML = 'Ola Mundo!!'
+
+       //append(depois) prepend(antes)
+       const body = document.querySelector('body')
+       body.prepend(div)//adicionado a div como a primeira tag depois da tag body
+       body.append(div)//adicionado a div depois da tag script por se ultima
+
+       //eventos
+       const input = document.querySelector('input')
+
+        input.onkeypress = function(){
+     console.log('rodei')
+    }
+      
+    </script>
+</body>
+</html>

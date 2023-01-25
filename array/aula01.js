@@ -28,13 +28,13 @@ let student = {
 
 
 
-//console.log(`${student.name} de idade ${student.age} pesa ${student.Weight} kg.`)
+console.log(`${student.name} de idade ${student.age} pesa ${student.Weight} kg.`)
 
-students = [
+/*students = [
     student,
     tiago,
     john,
     
 ]
 
-console.log(students)
+console.log(student)*/
